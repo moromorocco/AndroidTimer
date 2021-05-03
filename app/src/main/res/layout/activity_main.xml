@@ -17,12 +17,143 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="125dp">
 
-        <TextView
-            android:id="@+id/timer"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="24sp" />
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/_00h00m00s"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/buttonDel"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/X" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/Layout_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_1"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_2"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_3"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_4"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_5"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_6"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_7"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_8"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_9"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="?attr/listPreferredItemPaddingLeft"
+                    android:text="@string/_0" />
+
+            </TableRow>
+        </TableLayout>
 
         <Space
             android:layout_width="match_parent"
@@ -35,7 +166,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/start"
+            android:text="@string/スタート"
             android:visibility="visible"
             tools:visibility="visible" />
 
@@ -44,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/stop" />
+            android:text="@string/リセット" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
